@@ -1,0 +1,67 @@
+html,
+body,
+header,
+main,
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 1.75rem;
+}
+a {
+	color: inherit;
+}
+h1 > a {
+	font-size: 1rem;
+	opacity: 0.5;
+}
+h1 > a:hover {
+	opacity: 1;
+}
+header {
+	box-sizing: border-box;
+	height: 50px;
+	background-color: #352f44;
+	color: #ffffff;
+	padding: 0.25rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+
+#unityContainer {
+	/* Save aspect ratio */
+	width: 100dvw;
+	height: calc(100dvw / 1.56);
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background: #000;
+	}
+}
+
+body {
+	background: #faf0e6;
+	color: #352f44;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #526d82;
+		color: #dde6ed;
+	}
+	header {
+		background-color: #27374d;
+		color: #ffffff;
+	}
+}
